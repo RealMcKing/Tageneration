@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "854695997239",
+    "project_id": "tageneration-a6940",
+    "storage_bucket": "tageneration-a6940.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854695997239:android:9f1d2f18fcd255edf074b2",
+        "android_client_info": {
+          "package_name": "com.example.tageneration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854695997239-ou0h94mm3fn58c4l1im8mu6hlaugk290.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpNBi_G0sQQhTwQIeFEaaCvmy5gIojmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854695997239-ou0h94mm3fn58c4l1im8mu6hlaugk290.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
