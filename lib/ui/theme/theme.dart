@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   static ThemeData get dartTheme {
     return ThemeData(
+      dividerColor: Colors.transparent,
       scaffoldBackgroundColor: const Color(0xFF191919),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         enableFeedback: false,
@@ -69,7 +70,7 @@ class AppTheme {
           color: const Color(0xFFA0A7BA),
         ),
         contentPadding:
-            const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),
+            const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
         filled: true,
         fillColor: const Color(0xFF454545),
         errorBorder: OutlineInputBorder(

@@ -57,9 +57,8 @@ class AuthScreen extends StatelessWidget {
         ),
         body: SlidingUpPanel(
           minHeight: 72,
-          maxHeight: 216,
+          maxHeight: 160,
           parallaxEnabled: true,
-          backdropEnabled: true,
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(16.0),
             topRight: Radius.circular(16.0),
@@ -119,7 +118,7 @@ class AuthScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 8.0),
                 Text(
-                  "Swipe Down to Сlose other method",
+                  "Swipe Down to Close other method",
                   style: GoogleFonts.inter(
                     fontWeight: FontWeight.w700,
                     fontSize: 20,
@@ -137,17 +136,17 @@ class AuthScreen extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(16.0),
                         decoration: BoxDecoration(
-                            color: const Color(0xFFFD7F5F),
-                            borderRadius: BorderRadius.circular(16.0),
-                            boxShadow: [
-                              BoxShadow(
-                                color: const Color(0xFFFD7F5F).withOpacity(0.4),
-                                spreadRadius: 5,
-                                blurRadius: 20,
-                                offset: const Offset(0, 10),
-                              )
-                            ] // changes position of shadow)],
-                            ),
+                          color: const Color(0xFFFD7F5F),
+                          borderRadius: BorderRadius.circular(16.0),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xFFFD7F5F).withOpacity(0.4),
+                              spreadRadius: 5,
+                              blurRadius: 20,
+                              offset: const Offset(0, 10),
+                            )
+                          ],
+                        ),
                         child: const Icon(
                           Icons.facebook,
                           size: 30.0,

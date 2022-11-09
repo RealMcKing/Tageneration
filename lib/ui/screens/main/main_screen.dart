@@ -15,6 +15,7 @@ class MainScreen extends StatelessWidget {
     final model = context.watch<MainViewModel>();
 
     return Scaffold(
+      backgroundColor: const Color(0xFFFFFFFF),
       body: IndexedStack(
         index: model.selectedIndex,
         children: [
@@ -23,27 +24,37 @@ class MainScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 80,
-        decoration: const BoxDecoration(
-          color: Color(0xFF000000),
-          borderRadius: BorderRadius.only(
+        height: 64,
+        decoration: BoxDecoration(
+          color: const Color(0xFFFFFFFF),
+          borderRadius: const BorderRadius.only(
             topRight: Radius.circular(16.0),
             topLeft: Radius.circular(16.0),
           ),
-        ),
-        child: BottomNavigationBar(
-          currentIndex: model.selectedIndex,
-          onTap: (index) => model.onItemTapped(index),
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.archivebox_fill),
-              label: 'Products',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.person_solid),
-              label: 'Me',
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.25),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: const Offset(0, 3),
             ),
           ],
+        ),
+        child: ClipRRect(
+          child: BottomNavigationBar(
+            currentIndex: model.selectedIndex,
+            onTap: (index) => model.onItemTapped(index),
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(CupertinoIcons.archivebox_fill),
+                label: 'Products',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(CupertinoIcons.person_solid),
+                label: 'Me',
+              ),
+            ],
+          ),
         ),
       ),
     );
